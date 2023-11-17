@@ -47,9 +47,9 @@ killServerOnPort 8082
 runBenchmark "graphql/netflix_dgs/run.sh" "wrk/dgs_bench.sh"
 killServerOnPort 8082
 
-killServerOnPort 8081
+killServerOnPort 8000
 runBenchmark "graphql/gqlgen/run.sh" "wrk/gqlgen_bench.sh"
-killServerOnPort 8081
+killServerOnPort 8000
 
 killServerOnPort 8083
 runBenchmark "graphql/tailcall/run.sh" "wrk/tc_bench.sh"
