@@ -51,9 +51,9 @@ killServerOnPort 8000
 runBenchmark "graphql/gqlgen/run.sh" "wrk/gqlgen_bench.sh"
 killServerOnPort 8000
 
-killServerOnPort 8083
+killServerOnPort 8000
 runBenchmark "graphql/tailcall/run.sh" "wrk/tc_bench.sh"
-killServerOnPort 8083
+killServerOnPort 8000
 
 # Now, analyze all results together
 bash analyze.sh "${allResults[@]}"
